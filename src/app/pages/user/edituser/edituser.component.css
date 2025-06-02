@@ -1,0 +1,15 @@
+  #content {
+      margin-top: 30px;
+      margin-left: 250px;
+      transition: margin-left 0.3s ease;
+      padding: 20px;
+    }
+
+    #content.expanded {
+      margin-left: 0;
+    }
+
+    .content
+    {
+        background-color: #999;
+    }

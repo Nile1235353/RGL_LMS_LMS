@@ -1,0 +1,63 @@
+/* Base Background Color */
+    .body {
+      background-color: #f8f9fa; /* Light Gray for neutral, clean background */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Login Form Styles */
+    .login-form {
+      background-color: #fff; /* Soft Blue for calm and focus */
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* Input Fields */
+    .login-form .form-floating input {
+      border-radius: 5px;
+      box-shadow: none;
+      background-color: #ffffff; /* White background for clarity */
+      border: 1px solid #e0e0e0; /* Light border for simplicity */
+    }
+
+    /* Button Styles */
+    .login-form button {
+      border-radius: 5px;
+      border: none;
+      color: white;
+    }
+
+    /* Hover effect on button */
+    .login-form button:hover {
+      background-color: #e68900; /* Darker orange on hover */
+    }
+
+    /* Heading styles */
+    .login-form h3 {
+      color: #004a99; /* Dark Blue for professionalism and trust */
+      margin-bottom: 1.5rem;
+    }
+
+    /* Text for "Remember me" and error message */
+    .login-form .form-text {
+      font-size: 0.9rem;
+    }
+
+    /* Link styles */
+    .login-form a {
+      color: #6a1b9a; /* Purple for wisdom and depth */
+    }
+
+    .login-form a:hover {
+      color: #d1a1e3; /* Light Purple for hover effect */
+    }
+
+    /* Checkbox label color */
+    .form-check-label {
+      color: #004a99; /* Dark Blue for consistency */
+    }
