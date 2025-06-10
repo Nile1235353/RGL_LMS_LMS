@@ -219,7 +219,7 @@ export class UserlistComponent {
     }
 
     get paginatedRows(): TableRow[] {
-      const start = (this.currentPage - 1) * this.rowsPerPage;
+      const start = (this.currentPage - 4) * this.rowsPerPage;
       return this.tableRows.slice(start, start + this.rowsPerPage);
     }
 
@@ -239,5 +239,11 @@ export class UserlistComponent {
       if(this.currentPage < this.totalPages) {
         this.currentPage++;
       }
+    }
+
+    currentPages: number = 1;
+
+    setPage(page: number) {
+      this.currentPages = page;
     }
 }
