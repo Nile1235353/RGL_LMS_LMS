@@ -15,15 +15,15 @@ interface TableRow {
 }
 
 @Component({
-  selector: 'app-userlist',
+  selector: 'app-user',
   imports: [
     RouterModule,
     CommonModule
   ],
-  templateUrl: './userlist.component.html',
-  styleUrl: './userlist.component.css'
+  templateUrl: './user.component.html',
+  styleUrl: './user.component.css'
 })
-export class UserlistComponent {
+export class UserComponent {
     rowsPerPage = 10;
     currentPage = 1;
 
