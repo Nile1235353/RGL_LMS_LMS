@@ -58,4 +58,6 @@ export class SidebarComponent implements OnInit{
     const newTheme = this.currentTheme === 'dark' ? 'light' : 'dark';
     this.applyTheme(newTheme);
   }
+
+  
 }

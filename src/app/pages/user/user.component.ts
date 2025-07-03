@@ -196,9 +196,8 @@ export class UserComponent {
 
 
 
-    toggleCheckbox(index: number, event: Event): void {
-      const checked = (event.target as HTMLInputElement).checked;
-      this.tableRows[index].selected = checked;
+    toggleCheckbox(index: number, event: Event) {
+      this.paginatedRows[index].selected = !this.paginatedRows[index].selected;
     }
 
     toggleAllCheckboxes(event: Event): void {

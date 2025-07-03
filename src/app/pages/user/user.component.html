@@ -33,7 +33,7 @@
                   <thead>
                     <tr>
                         <th>
-                            <input type="checkbox" (change)="toggleAllCheckboxes($event)" [checked]="isAllSelected()" />
+                            <input type="checkbox" (change)="toggleAllCheckboxes($event)"  [checked]="isAllSelected()" />
                         </th>
                       <th>ID</th>
                       <th>Name</th>
@@ -46,9 +46,9 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr *ngFor="let row of paginatedRows;  let i = index">
+                    <tr *ngFor="let row of paginatedRows;  let i = index" (click)="toggleCheckbox(i, $event)">
                         <td>
-                            <input type="checkbox" [checked]="row.selected" (change)="toggleCheckbox(i, $event)" />
+                            <input type="checkbox" [checked]="row.selected" (click)="toggleCheckbox(i, $event)" (change)="toggleCheckbox(i, $event)" />
                         </td>
                       <td>{{ row.ID }}</td>
                       <td>{{ row.name }}</td>
